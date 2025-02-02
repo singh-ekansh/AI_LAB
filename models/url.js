@@ -11,15 +11,15 @@ const urlSchema = new mongoose.Schema({
         required: true
     },
     visitHistory:[ {
+        timestamp:{
         type: Number,
-        default: 0
+        default: 0}
     }],
     },
     {timestamps: true}
 
 
 );
-
 
 const URL = mongoose.model('URL', urlSchema);
 
